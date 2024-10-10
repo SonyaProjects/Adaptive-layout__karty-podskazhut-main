@@ -13,7 +13,24 @@
   </head>
   <body class="page theme_dark">
     <header class="header">
-      <h1 class="heading header content-section header__title">Карты подскажут</h1>
+      <h1 class="heading content-section header__title">Карты подскажут</h1>
+      <hr class="horizontal-line content-section">
+      <nav class="header__menu content-section">
+        <div class="header__logo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="135" height="25">
+            <use href="./images/logo.svg#logo"></use>
+          </svg>
+        </div>
+        <ul class="header__theme-toggler">
+          <li>
+            <button class="header__theme-button header__theme-button_type_dark" type="button">Тёмная</button>
+          </li>
+          <li>
+            <button class="header__theme-button header__theme-button_type_light header__theme-button_is-active" type="button" disabled>Светлая</button>
+          </li>
+        </ul>
+      </nav>
+      <hr class="horizontal-line content-section">
     </header>
     <main class="content content-section">
       <h2 class="heading content__title">Креативный подход к решению проблем</h2>
@@ -30,13 +47,14 @@
           <source srcset="/images/cards-1x.avif 1x, /images/cards-2x.avif 2x" type="image/avif">
           <source srcset="/images/cards-1x.webp 1x, /images/cards-2x.webp 2x" type="image/webp">
           <source srcset="/images/cards-1x.png 1x, /images/cards-2x.png 2x" type="image/png">
-          <img src="/images/cards-1x.png" alt="Карты" class="content__picture">
+          <img src="/images/cards-1x.png" alt="Карты" class="content__picture" loading="lazy">
         </picture>
         <figcaption class="content__picture-caption">
-          Описание изображения
+          Колода Oblique Strategies
         </figcaption>
+        <hr class="horizontal-line content-section">
       </figure>
-      <div class="content__text-block content__text-block_type_first-lettered">
+      <div class="content__text-block">
         <p class="content__paragraph">Oblique Strategies в основном используют музыканты, но колода подходит для преодоления творческого кризиса в любой сфере. Её рекомендуют писателям, продакт-менеджерам, художникам и разработчикам. </p>
         <p class="content__paragraph">Колода состоит из ста с лишним карточек, на которых написано всего по одной фразе. Часто — довольно абстрактной. Например, «Какую ошибку вы совершили в прошлый раз?» или «Замените двусмысленность на конкретику», или даже «Добавьте что-то ещё». Эти фразы и надо применять к проблеме или творческому блоку. Каким именно способом? Решаете только вы.</p>
       </div>
@@ -47,6 +65,10 @@
         <p class="content__paragraph">Таким образом, колода Ино поощряет нас видеть препятствия не как тупики, а как отправные точки для поиска более интересных решений. </p>
         <p class="content__paragraph">И кстати, сейчас необязательно охотиться за редкими физическими колодами Oblique Strategies — тем более, что их моментально разбирают фанаты Ино. Есть довольно симпатичные <a class="content__link" href="#">веб-сайты</a> с диджитал-эквивалентами карточек и приложения для <a class="content__link" href="https://apps.apple.com/us/app/oblique-strategies-se/id1104927011">iOS</a> и <a class="content__link" href="https://play.google.com/store/apps/details?id=com.monoloco.obliquestrategies&hl=en_US&gl=US&pli=1">Android</a>.</p>
       </div>
+      <article class="content__card">
+        <h3 class="content__card-title heading">Use an <span class="colored-text">old idea</span></h3>
+        <p class="content__card-subtitle">Воспользуйтесь старой идеей</p>
+      </article>
       <h2 class="heading content__title">Кто пользовался Oblique Strategies</h2>
       <div class="content__text-block">
         <ul class="content__list">
@@ -57,9 +79,12 @@
         </ul>
       </div>
     </main>
-    <footer class="footer"></footer>
+    <hr class="horizontal-line content-section">
+    <footer class="footer">
+      <p class=".footer__copyright">VЁRSTKA</p>
+    </footer>
 
     <!-- Раскомментируйте строчку ниже, когда вёрстка будет готова. Если вы назвали все классы. как нужно, переключатель темы будет работать -->
-    <!-- <script src="./scripts/theme-changer.js"></script> -->
+     <script src="./scripts/theme-changer.js"></script>
   </body>
 </html>
